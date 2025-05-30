@@ -1,0 +1,137 @@
+<!-- Sign-Up Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - CollegeGram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #0a192f;
+      color: #ff6f61;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .left {
+      width: 35%;
+      background-image: url('https://images.unsplash.com/photo-1611954732258-5e3582993038?auto=format&fit=crop&w=800&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .right {
+      width: 65%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top right, #112240, #0a192f);
+    }
+
+    .form-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 50px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      width: 90%;
+      max-width: 400px;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ff6f61;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    p {
+      color: #ffb3aa;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      border: 1px solid #ff857a;
+      background-color: rgba(255, 255, 255, 0.07);
+      color: #ffdbd6;
+    }
+
+    input::placeholder {
+      color: #ffb3aa;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(to right, #ff6f61, #ff9d8d);
+      border: none;
+      border-radius: 12px;
+      font-weight: bold;
+      color: #0a192f;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ffc1b5;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .links a {
+      color: #ff9e91;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 900px) {
+      body { flex-direction: column; }
+      .left { display: none; }
+      .right { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="left"></div>
+  <div class="right">
+    <div class="form-box">
+      <h1>Welcome to CollegeGram!</h1>
+      <p>Create your new account</p>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="links">
+        <a href="signup.html">Already have an account? Log In</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

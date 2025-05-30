@@ -1,0 +1,67 @@
+<!-- Account Created Confirmation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Account Created - CollegeGram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #0a192f;
+      color: #ff6f61;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+      max-width: 500px;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #ff6f61;
+    }
+
+    p {
+      color: #ffb3aa;
+      margin-bottom: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      background: linear-gradient(to right, #ff6f61, #ff9d8d);
+      color: #0a192f;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background: #ffc1b5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Account Created!</h1>
+    <p>Welcome to CollegeGram 🎉 Your account is now active.</p>
+    <a href="login.html">Log In Now</a>
+  </div>
+</body>
+</html>
